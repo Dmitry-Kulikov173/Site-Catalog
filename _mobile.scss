@@ -1,0 +1,243 @@
+@media (max-width: 460px) {
+    .center {
+        padding-left: calc(50% - $width-mobile/2);
+        padding-right: calc(50% - $width-mobile/2);
+    }
+
+    .top-catalog {
+        background-image: url(images/background/catalog-header-mobile.jpeg);
+        background-position: left;
+    }
+
+    .header {
+        border: none;
+        min-height: 57px;
+        padding-top: 32px;
+
+        &__logo {
+            width: 99px;
+        }
+
+        &__input {
+            display: none;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__nav-mobile {
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .top {
+        &__basket {
+            background-image: url(images/background/basket-header-mobile.jpeg);
+            background-position: right;
+        }
+
+        &__name {
+            margin-top: 29px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__name-catalog {
+            margin-top: 82px;
+        }
+
+        &__name-basket {
+            margin-top: 82px;
+        }
+
+        &__text {
+            font-size: 3rem;
+            text-align: center;
+            line-height: 59px;
+        }
+
+        &__description {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+
+    .basket {
+        margin-top: 92px;
+        row-gap: 3rem;
+
+        &__product {
+            padding-top: 18px;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__name-box {
+            display: none;
+        }
+
+        &__item {
+            row-gap: 24px;
+        }
+
+        &__product-box {
+            width: 100%;
+        }
+
+        &__product-name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__product-description {
+            font-size: 12px;
+            line-height: 15px;
+            width: 253px;
+        }
+
+        &__product-price {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__next {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__button {
+            width: 166px;
+            height: 37px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+
+        &__form {
+            grid-column: span 8;
+        }
+    }
+
+    .up-functions {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        &__criteria {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .filter {
+        left: 0px;
+
+        &__form {
+        flex-wrap: wrap;
+        row-gap: 32px;
+        }
+    }
+
+    .criteria-castom-mobile {
+        width: 182px;
+    }
+
+    .for {
+        &__furniture {
+            font-size: 24px;
+            margin-top: 2rem;
+            line-height: 29px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        &__item {
+            grid-column: span 4;
+            height: 243px;
+
+            &_mobile {
+                height: 375px;
+            }
+        }
+
+        &__item-name {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+
+    .product-box {
+        &__special {
+            font-size: 24px;
+            margin-top: 3rem;
+            line-height: 29px;
+        }
+
+        &__catalog {
+            margin-top: 36px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    
+        &__content {
+            row-gap: $gap;
+        }
+    }
+
+    .product {
+        width: 100%;
+
+        &__link {
+            display: block;
+            position: absolute;
+            display: flex;
+            gap: 26px;
+            left: calc(100% - 86px);
+            top: 11px;
+        }
+
+        &__name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        &__description {
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .link-box {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        margin-top: 33px;
+        padding-bottom: 33px;
+
+        &__content {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+}

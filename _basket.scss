@@ -1,0 +1,226 @@
+    
+.top  {
+    &__basket {
+        height: 400px;
+        background-image: url(images/background/basket-header.jpg);
+        background-position: center;
+    }
+
+    &__name-basket {
+        margin-top: 127px;
+    }
+}
+
+.basket {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $gap;
+    row-gap: 64px;
+    margin-top: 64px;
+
+    &__content{
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        margin-right: 27px;
+        margin-left: 3px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: $gap;
+    }
+
+    &__product {
+        padding-top: 32px;
+        display: flex;
+        gap: 31px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        border-top: solid 0.5px;
+        border-color: #CACDD8;
+    }
+
+    &__product-first {
+        padding-top: 25px;
+    }
+
+    &__product-box {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 204px);
+    }
+
+    &__image {
+        width: 173px;
+    }
+
+    &__product-info {
+        display: grid;
+        align-items: center;
+    }
+
+    &__product-name {
+        margin-bottom: 14px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #000000;
+    }
+
+    &__product-description {
+        width: 276px;
+        height: 50px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        color: #888888;
+    }
+
+    &__product-price {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: #050505;
+    }
+
+    &__product-option {
+        color: black;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        font-weight: 400;
+        font-size: 14px;
+        padding-right: 30px;
+    }
+
+    &__product-number {
+        font: inherit;
+        width: 71px;
+        height: 51px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: none;
+        background: rgb(247, 246, 246);
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        outline: none;
+    }
+
+    &__product-number::placeholder {
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__product-number::-webkit-inner-spin-button {
+        opacity: 1;
+        margin-right: 14px;
+    }
+
+    &__next {
+        margin-top: 50px;
+        display: flex;
+        gap: 7px;
+    }
+
+    &__button {
+        font: inherit;
+        width: 200px;
+        height: 37px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        background-color: $color-text;
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__form {
+        grid-column: span 4;
+        background: #f7f6f6;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 556px;
+    }
+
+    &__form-name {
+        margin-top: 42px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    &__form-data {
+        width: 288px;
+        margin-top: 35px;
+        display: grid;
+        gap: 41.5px;
+    }
+
+    &__form-input {
+        font: inherit;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__form-input:hover {
+        background: rgb(235, 236, 236);
+    }
+
+    &__form-input::placeholder {
+        color: black;
+    }
+
+    &__form-summ {
+        margin-top: 64px;
+        margin-bottom: 18px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    &__order {
+        font: inherit;
+        width: 290px;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        background: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
