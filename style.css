@@ -373,28 +373,23 @@ body {
   justify-content: space-between;
   row-gap: 14px;
 }
-
 .up-functions__nav {
   display: flex;
   align-items: center;
 }
-
 .up-functions__nav-link {
   font-weight: 400;
   font-size: 1rem;
   line-height: 32px;
   color: black;
 }
-
 .up-functions__nav-link:hover {
   text-decoration: underline;
 }
-
 .up-functions__nav-span {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .up-functions__criteria {
   display: flex;
   flex-wrap: wrap;
